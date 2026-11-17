@@ -1,0 +1,18 @@
+{
+  "name": "@forge/desktop",
+  "productName": "Forge Harness",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Forge Harness — native desktop shell for your BYOK AI infrastructure.",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo 'desktop shell covered by smoke test' && exit 0",
+    "typecheck": "node --check main.cjs && echo OK",
+    "lint": "node --check main.cjs && echo OK",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
+  }
+}

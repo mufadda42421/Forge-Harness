@@ -1,0 +1,12 @@
+export * as providers from "./providers/factory.js";
+export { createAdapter } from "./providers/factory.js";
+export type { ProviderConfig, ProviderAdapter, DiscoveredModel, ConnectionTestResult } from "./providers/types.js";
+export { ModelRouter, type RouterRequest, type RouterResult, type RouterContext } from "./router/router.js";
+export { runAgent, type AgentRunInput, type AgentRunResult } from "./agents/runner.js";
+export { runOrchestration, type RunOrchestrationInput, type OrchestrationResult, type OrchestrationPattern } from "./orchestrator/runner.js";
+export { validateWorkflowDefinition, type WorkflowDefinition, type WorkflowNodeDef, type WorkflowEdgeDef, type WorkflowNodeType, type WorkflowValidationResult } from "./workflow/validate.js";
+export { runWorkflow, ApprovalRequired, type WorkflowRunParams, type WorkflowRunResult } from "./workflow/runner.js";
+export { assembleContext, lexicalScore, tokenize, type AssembledContext } from "./context/engine.js";
+export { executeTool, decideToolPolicy, DEFAULT_TOOL_POLICY, type ToolPolicy, type ToolExecutionResult } from "./tools/manager.js";
+export { runBenchmark, type BenchmarkRunParams, type BenchmarkSummary } from "./benchmarks/runner.js";
+export { OpenCodeClient, type OpenCodeConfig, type OpenCodeSession } from "./opencode/client.js";
